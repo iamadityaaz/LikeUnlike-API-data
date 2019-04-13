@@ -1,0 +1,65 @@
+git config --global user.name "userName"
+git config --global user.name "email@gmail.com"
+
+git config --list 
+
+git init  //in project dir to start tracking this project with git
+git status //it shows the status what we have not committed or else
+
+git add -A //to add all the files
+git status
+
+git reset //remove all files from staging area or 
+git reset filename //to remove this particular file
+
+git add -A
+git commit -m "message"
+
+git log //gives auther name and commits messages and details
+
+//****************************************//
+
+git clone <url> and . // here . means the ciurrent directory where to clone the files from the repository
+
+git remote -v or  // gives information about remote repository
+git branch -a     //gives information about all the branches of remote repository
+
+
+git remote rm origin //removes all the branches and all
+
+//**************************//
+// Pushing project after comming and all
+
+**  curl -u 'iamadityaaz' https://api.github.com/user/repos -d '{"name":"checkoutUi"}' //create repo from terminal //****************//
+git remote add origin https://github.com/iamadityaaz/checkoutUi.git
+
+
+git pull origin master  //pulls the chsnges made by other developers
+git push origin master //pushs the chanegs to be available for ither developers also
+
+//********//
+//git branch
+
+git branch // lists all the branches //colored branch is the branch which we are currently working in
+git checkout branch_name //switches to other branch
+
+git status
+git add - A //add those changes if made
+git commit -m "message"
+git push -u origin branch_name //pushed the files and code to the remote repositories
+git branch -a //gives information about all the branches of remote repository
+
+git checkout master
+git pull origin master //here it is gonna say updated , because the push were not made in master branch
+git branch --merged //show the branches which are merged already
+git merge branch_name //merges the branch with master
+git push origin master //to make the merge available
+git branches --merged //it will show the both branch, master and the made branch
+
+//*************//
+//deleting the branch
+git branch -d branch_name //to delete the branch from local repositories
+git branch -a //it will the locally deleted branch
+git push origin --delete branch_name //deleted the branch remotely
+git branch -a //it will the show that the branch is no more available
+
