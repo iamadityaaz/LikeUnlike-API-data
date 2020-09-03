@@ -24,7 +24,7 @@ const listData = [
   { id: "0", name: "Aditya", email: "adityaprakash159@gmail.com" },
   { id: "1", name: "Ashad", email: "ashadnasim@gmail.com" },
   { id: "2", name: "Pranav", email: "pranav@gmail.com" },
-  { id: "3", name: "Aakash", email: "aakash@gmail.com" }
+
 ];
 
 export default class App extends React.Component {
